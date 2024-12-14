@@ -1,0 +1,26 @@
+#Directory
+.vs/
+Library/
+Logs/
+Packages/
+obj/
+UserSettings/
+Temp/
+ProjectSettings/
+
+#Files
+.vsconfig
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+Unity Shader.sln
+Assets/Materials.meta
+Assets/Readme.asset
+Assets/Readme.asset.meta
+Assets/Scenes.meta
+Assets/Settings.meta
+Assets/Settings/
+Assets/Shaders.meta
+Assets/TutorialInfo.meta
+Assets/TutorialInfo/
+Assets/UniversalRenderPipelineGlobalSettings.asset
+Assets/UniversalRenderPipelineGlobalSettings.asset.meta
