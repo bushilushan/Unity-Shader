@@ -10,7 +10,7 @@ Shader "MyShader/BlinnPhongLightMode" {
 	SubShader {
 		Pass {
 			// 标签如果使用下面这个标签，模型会直接变紫色，不知道什么原因
-			// Tags { "LightMode"="ForwardBase" }
+			//Tags { "LightMode"="ForwardBase" }
 			Tags { "RenderType"="Opaque" }
 		
 			CGPROGRAM
