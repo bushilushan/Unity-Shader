@@ -78,6 +78,10 @@ Shader "MyShader/NormalMapTangentSpace"{
 				// 所以在存储法线纹理时，需要将法线的[-1,1]先线性映射到[0,1]后才能存储成一张法线纹理）。所以直接使用tex2D采样
 				// 得到的是映射后的法线，需要反映射（unpack）回去，才能得到真正的切线空间的法线。
 				float3 tangentNormal = UnpackNormal(tex2D(_BumpMap, i.uv));
+				// 下面这里为什么将tangentNormal的xy分量乘以_BumpScale呢？
+				// 1、因为法线贴图是2D的，它只存储了xy分量的信息，z分量可以计算出来，不用存储。
+				// 2、在大多数3D渲染中，x和y分量对应于屏幕空间的横向和纵向，而z分量对应于深度（即相机视角的前后方向）。
+				// 因此，调整x和y分量可以更直观地控制屏幕上可见的凹凸效果，因为它们直接影响到用户在屏幕上看到的形状变化。
 				tangentNormal.xy *= _BumpScale;
 				tangentNormal.z = sqrt(1 - saturate(dot(tangentNormal.xy, tangentNormal.xy)));
 				fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz * texCol.rgb;
