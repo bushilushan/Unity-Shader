@@ -1,6 +1,4 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-Shader "MyShader/NormalMapTangentSpace"{
+Shader "MyShaders/NormalMapTangentSpace"{
 	Properties{
 		_MainTex("Texture", 2D) = "white" {}
 		_BumpMap("Normal Map", 2D) = "bump" {}

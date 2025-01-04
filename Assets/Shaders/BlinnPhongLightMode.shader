@@ -1,4 +1,4 @@
-Shader "MyShader/BlinnPhongLightMode" {
+Shader "MyShaders/BlinnPhongLightMode" {
 
 	Properties {
 		_DiffuseColor ("Diffuse", Color) = (1, 1, 1, 1)

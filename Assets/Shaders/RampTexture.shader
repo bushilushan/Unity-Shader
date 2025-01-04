@@ -1,4 +1,4 @@
-Shader "MyShader/RampTexture" {
+Shader "MyShaders/RampTexture" {
 	Properties {
 		_Color ("Color Tint", Color) = (1, 1, 1, 1)
 		_RampTex ("Ramp Tex", 2D) = "white" {}

@@ -1,4 +1,4 @@
-Shader "MyShader/BlinnPhongLightMode" {
+Shader "MyShaders/BlinnPhongLightMode" {
 
 	Properties {
 		_MainTex ("Texture", 2D) = "white" {}
