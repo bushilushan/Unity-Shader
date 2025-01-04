@@ -20,6 +20,7 @@
 		// 例如，一个半透明的玻璃窗，透过它可以看到背后的物体。如果投影器的效果被应用到这个玻璃窗上，投影器的光可能会与玻璃窗的半透明效果混合，导致视觉上的不一致或不自然
 		Tags { "RenderType" = "TransparentCutout" "Queue" = "AlphaTest" "IgnoreProjector" = "True"}
 		Pass {
+			Cull off
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
